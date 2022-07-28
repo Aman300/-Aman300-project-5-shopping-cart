@@ -1,0 +1,151 @@
+<style>
+  body::-webkit-scrollbar {
+        width: 10px;               /* width of the entire scrollbar */
+      }
+
+      body::-webkit-scrollbar-track {
+        background: black;        /* color of the tracking area */
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: black;    /* color of the scroll thumb */
+        border-radius: 50px;       /* roundness of the scroll thumb */
+        border: 0.5px solid white  /* creates padding around scroll thumb */
+      }
+
+
+    body{
+        font-family: 'Fenix';
+        background-color: black;
+    }
+    .btn{
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-weight: bold;
+        color: white;
+        background-color: #B3001F;
+        
+    }
+    .btn:hover{            
+        background-color: red;
+        color: white;          
+
+    }
+    .icon-css:hover{
+       color: #268cdf;
+    }
+    a{
+        color: #B3001F;
+    }
+
+      .checked {
+    color: rgb(255, 238, 0);
+  }
+@media (min-width: 1080px) {
+  .pad{
+    padding: 20px;
+  }
+  img{
+    padding: 0%;
+    margin: 0%;
+  }
+  h4,h6,p{
+    text-align: center;
+    color: black;
+  }
+  h6{
+    font-size: larger;
+  }
+  p{
+    font-size: larger;
+  }
+  .card-view{
+    margin: 0px;
+    padding: 9rem;
+  }
+  .price-font{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .cart-text-size{
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 100px;
+  }
+  .SearchBar{
+   
+    width: 500px;
+    background-color: black;
+    border: none;
+    }
+
+
+ 
+}
+@media (max-width: 480px) {
+  .pad{
+    padding: 0%;  
+  
+  }
+  .SearchBar{
+    background-color: black;
+    border: none;
+    }
+
+  .cart-text-size{
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  h4,h6,p{
+    font-size: small;
+    text-align: center;
+    color: black;
+  }
+  h6{
+    font-size: 10px;
+  }
+  p{
+    font-size: larger;
+  }
+  .btn{
+    font-size: 10px;
+    padding: 3px 10px;
+  }
+}
+
+.spc{
+  margin-left: 25px;
+}
+
+</style>
+
+
+
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: black">
+    <a class="navbar-brand" href="/"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229" alt="img" class="image-fluid w-50"></a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+         
+          
+         
+        </ul>
+        <form class="d-flex text-center text-dark p-2" action="/productSearch" method="post"> 
+                      
+          <input type="text" class="form-control" placeholder="Search.." required name="productName" style="border-radius: 50px; border: none; font-size: 20px;">
+          <button type="submit" class="SearchBar"><i class="fa fa-search text-white" aria-hidden="true" style="font-size: 30px"></i></button>        
+
+        </form>
+
+          <div class="d-flex justify-content-evenly">                    
+          <i class="fa fa-user-circle text-white spc" aria-hidden="true" style="font-size: 30px"></i>
+          <a href="/getCart" target="_productPage"><i class="fa fa-cart-arrow-down text-white spc" aria-hidden="true" style="font-size: 30px"></i></a>
+          <a href="/createProductPage" target="_productPage"><i class="fa fa-plus-square text-white spc" aria-hidden="true" style="font-size: 30px"></i></a>
+          </div>
+        
+    </div>
+</nav>
